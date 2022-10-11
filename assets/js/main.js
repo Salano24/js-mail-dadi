@@ -38,7 +38,7 @@ if(numeroEmail == listaEmail.length){
     let giocatore = Math.round((Math.random()*5) + 1)
     let computer = Math.round((Math.random()*5) + 1)
 
-    function calculations(){
+    
      if(giocatore > computer){
         alert("Sei il vincitore")
         console.log('Numero giocatore -->', giocatore, ',', 'Numero computer -->', computer,',', 'Sei il vincitore');
@@ -51,8 +51,8 @@ if(numeroEmail == listaEmail.length){
        console.log('Pareggio');
 
      }
-    }
+    
 
-    calculations();
+    
 }
 
