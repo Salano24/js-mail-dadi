@@ -13,13 +13,26 @@ const listaEmail = ['riccardoscrizzi@gmail.com', 'donatoriccio@gmail.com']
     }
 } */
 
-if (emailUtente === listaEmail[1]){
+/* if (emailUtente === listaEmail[1]){
     alert('Accesso consentito')
 } else if (emailUtente === listaEmail[2]){
     alert('Accesso consentito')
 } else {
     alert('Accesso negato')
 
+} */
+
+let numeroEmail= 0
+
+for(let i = 0; i < listaEmail.length; i++){
+    if(listaEmail.includes(emailUtente) == false){
+        numeroEmail++
+    }
+}
+//stampa un messaggio appropriato sull’esito del controllo.
+if(numeroEmail == listaEmail.length){
+    alert(`Accesso negato`)
+} else {
+    alert(`Accesso consentito`)
 }
 
-//stampa un messaggio appropriato sull’esito del controllo.
